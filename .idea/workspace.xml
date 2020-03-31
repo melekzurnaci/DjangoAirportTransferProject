@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7d5da554-1776-4f19-8f8c-4a3a5cd8c6c4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Zo2rX4OF63xWCD1heD8X1dgoV9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/product" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Django\HTSitesi\product" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d5da554-1776-4f19-8f8c-4a3a5cd8c6c4" name="Default Changelist" comment="" />
+      <created>1585491326114</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585491326114</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="9" width="816" height="729" key="#Intentions" timestamp="1585494950670">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="0" y="9" width="816" height="729" key="#Intentions/0.0.1366.738@0.0.1366.738" timestamp="1585494950670" />
+    <state x="473" y="248" key="FileChooserDialogImpl" timestamp="1585497599296">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="473" y="248" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585497599296" />
+    <state x="164" y="23" key="SettingsEditor" timestamp="1585561794544">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="164" y="23" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585561794544" />
+    <state x="384" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1585655306873">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="384" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1585655306873" />
+  </component>
+</project>
