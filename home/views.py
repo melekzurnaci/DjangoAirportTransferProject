@@ -26,7 +26,7 @@ def referanslar(request):
 
 
 def iletisim(request):
-
+#formu kaydetmek için bu fonksiyon yazıldı
     if request.method == 'POST': #form post ediliyor
         form = ContactFormu(request.POST)
         if form.is_valid():
@@ -35,14 +35,14 @@ def iletisim(request):
             data.email = form.cleaned_data['email']
             data.subject = form.cleaned_data['subject']
             data.message = form.cleaned_data['message']
-            data.ip = request.META.get['REMOTE']
+            data.ip = request.META.get('REMOTE_ADDR')
             data.save()
             messages.success(request, "Mesajınız başarı ile gönderilmiştir, Teşekkür Ederiz")
             return HttpResponseRedirect ('/iletisim')
-
+    #forma ulaşmak için bu kodlar yazıldı
     setting = Setting.objects.get(pk=1)
     form = ContactFormu()
-    context = {'setting': setting, 'form': 'form'}
+    context = {'setting': setting, 'form': form}
     return render(request, 'iletisim.html', context)
 
 

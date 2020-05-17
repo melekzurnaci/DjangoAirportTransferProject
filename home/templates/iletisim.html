@@ -13,6 +13,7 @@
 
 {% block content %}
 
+
   <!-- Start Proerty header  -->
   <section id="aa-property-header">
     <div class="container">
@@ -30,39 +31,73 @@
     </div>
   </section>
   <!-- End Proerty header  -->
-  <section id="section">
 
-    <div class="container">
-      <row>
-        <div class="col-md-8">
-          <div class="section-title">
-            <h3 class="title">İletişim Bilgilerim</h3>
-          </div>
-             {{ setting.contact | safe }}
-        </div>
-        <div class="col-md-4">
-            <div class="aa-contact-bottom">
-                  <div class="aa-title">
-                    <h3 class="title">İletişim Formu</h3>
-                  </div>
-                   {% if messages %}
-                      {% for message in messages %}
-                        <div class="alert alert-{{message.tags}}" role="alert">
-                          {{ message }}
-                        </div>
-                      {% endfor %}
-                   {% endif %}
 
-                   <form action="" method="post">
-                     {% csrf_token %}
-                     {{ form.as_p }}
-                     <input type="submit" value="SEND FORM">
-                   </form>
-             </div>
-        </div>
-      </row>
-    </div>
+<section id="aa-contact">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+            <div class="aa-contact-area">
+                <div class="aa-contact-top">
+                  <div class="aa-contact-top-left">
+                          <div class="section-title">
+                            <h3 class="title">İletişim Bilgilerim</h3>
+                          </div>
+                             {{ setting.contact | safe }}
+                    </div>
+                </div>
+                <div class="aa-contact-bottom">
+                    <div class="aa-title">
+                        <h2>İLETİŞİM FORMU </h2>
+                    </div>
+                    <div class="aa-contact-form">
+                        {% if messages %}
+                          {% for message in messages %}
+                                <div class="alert alert-{{message.tags}}" role="alert">
+                                  {{ message }}
+                                </div>
+                          {% endfor %}
+                        {% endif %}
+                        <form class="contactform">
+
+
+                             <form action="" method="post">
+                                 {% csrf_token %}
+                                 {{ form.as_p }}
+                                 <input type="submit" value="SEND FORM">
+                             </form>
+
+                        </form>
+                    </div>
+            </div>
+            </div>
+       </div>
+     </div>
+   </div>
+
   </section>
 
 
 {% endblock %}
+<!-- <div class="aa-contact-top-right">-->
+<!--                      <div class="aa-title">-->
+<!--                        <h2>Send Your Message</h2>-->
+<!--                      </div>-->
+<!--                         <form >-->
+<!--                           {% if messages %}-->
+<!--                              {% for message in messages %}-->
+<!--                                <div class="alert alert-{{message.tags}}" role="alert">-->
+<!--                                  {{ message }}-->
+<!--                                </div>-->
+<!--                              {% endfor %}-->
+<!--                           {% endif %}-->
+
+<!--                           <form action="" method="post">-->
+<!--                             <h3>test deneme</h3>-->
+<!--                             {% csrf_token %}-->
+<!--                             {{ form.as_p }}-->
+<!--                             <input type="submit" value="SEND FORM">-->
+<!--                           </form>-->
+<!--                         </form>-->
+<!--                        </div>-->
+<!--                       </div>-->

@@ -63,7 +63,7 @@ class ContactFormu(ModelForm):
         widgets = {
            'name': TextInput(attrs={'class': 'comment-form-author', 'placeholder': 'Name & Surname'}),
            'subject': TextInput(attrs={'class': 'comment-form-url', 'placeholder': 'Subject'}),
-           'email': TextInput(attrs={'class': 'comment-form-emai', 'placeholder': 'Email Address'}),
-           'message': Textarea(attrs={'class': 'comment-form-comment', 'placeholder': 'Your Message', 'rows':'5'}),
+           'email': TextInput(attrs={'class': 'comment-form-email', 'placeholder': 'Email Address'}),
+           'message': Textarea(attrs={'class': 'comment-form-comment', 'placeholder': 'Your Message', 'rows': '5'}),
 
         }

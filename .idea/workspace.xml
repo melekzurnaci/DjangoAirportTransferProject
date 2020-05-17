@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d5da554-1776-4f19-8f8c-4a3a5cd8c6c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home/migrations/0003_auto_20200517_1512.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Lenovo_Pc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Lenovo_Pc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/iletisim.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/iletisim.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
@@ -89,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589682924377</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="havalinı Transfer sitesi iletişim kısmı düzenlendi form oluşturuldu">
+      <created>1589732340833</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589732340833</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,7 +137,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="havalinı Transfer sitesi admin paneline CKeditor kurulumu yapıldı" />
     <MESSAGE value="havalinı Transfer sitesi hakkımızda , referans , iletişim sayfaları oluşturuldu" />
-    <option name="LAST_COMMIT_MESSAGE" value="havalinı Transfer sitesi hakkımızda , referans , iletişim sayfaları oluşturuldu" />
+    <MESSAGE value="havalinı Transfer sitesi iletişim kısmı düzenlendi form oluşturuldu" />
+    <option name="LAST_COMMIT_MESSAGE" value="havalinı Transfer sitesi iletişim kısmı düzenlendi form oluşturuldu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="9" width="816" height="729" key="#Intentions" timestamp="1585494950670">
@@ -146,10 +153,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="442" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1589332022486" />
-    <state x="516" y="0" key="CommitChangelistDialog2" timestamp="1589682923118">
+    <state x="497" y="0" key="CommitChangelistDialog2" timestamp="1589732338226">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="516" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589682923118" />
+    <state x="497" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589732338226" />
     <state x="473" y="248" key="FileChooserDialogImpl" timestamp="1585497599296">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -158,14 +165,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="164" y="23" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585561794544" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1589682939488">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1589732357504">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1589682939488" />
-    <state x="388" y="142" key="com.intellij.ide.util.TipDialog" timestamp="1589723727754">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1589732357504" />
+    <state x="388" y="142" key="com.intellij.ide.util.TipDialog" timestamp="1589741934099">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="388" y="142" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1589723727754" />
+    <state x="388" y="142" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1589741934099" />
     <state x="492" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586638017252">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
