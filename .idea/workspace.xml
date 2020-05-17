@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d5da554-1776-4f19-8f8c-4a3a5cd8c6c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home/templates/hakkimizda.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/iletisim.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/referanslarimiz.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTSitesi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTSitesi/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,17 +45,18 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/product" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/home/templates" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Django\HTSitesi\product" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Django\HTSitesi\home\templates" />
       <recent name="C:\Django\HTSitesi\uploads\images" />
       <recent name="C:\Django\HTSitesi\home\migrations" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Django\HTSitesi\home\templates" />
+      <recent name="C:\Django\HTSitesi\product" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -69,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589677630498</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="havalinı Transfer sitesi admin paneline CKeditor kurulumu yapıldı">
+      <created>1589678240921</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589678240921</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,10 +140,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="442" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1589332022486" />
-    <state x="231" y="0" key="CommitChangelistDialog2" timestamp="1589677626724">
+    <state x="231" y="0" key="CommitChangelistDialog2" timestamp="1589678239479">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="231" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589677626724" />
+    <state x="231" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589678239479" />
     <state x="473" y="248" key="FileChooserDialogImpl" timestamp="1585497599296">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -137,6 +152,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="164" y="23" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585561794544" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1589678258281">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1589678258281" />
     <state x="388" y="142" key="com.intellij.ide.util.TipDialog" timestamp="1589675701842">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
