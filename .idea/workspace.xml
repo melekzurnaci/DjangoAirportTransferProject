@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d5da554-1776-4f19-8f8c-4a3a5cd8c6c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Lenovo_Pc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/homebase.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTSitesi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTSitesi/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTSitesi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTSitesi/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +62,14 @@
       <option name="presentableId" value="Default" />
       <updated>1585491326114</updated>
     </task>
+    <task id="LOCAL-00001" summary="havalinı Transfer sitesi admin paneline CKeditor kurulumu yapıldı">
+      <created>1589677630498</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589677630498</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +108,10 @@
       </set>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="havalinı Transfer sitesi admin paneline CKeditor kurulumu yapıldı" />
+    <option name="LAST_COMMIT_MESSAGE" value="havalinı Transfer sitesi admin paneline CKeditor kurulumu yapıldı" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="0" y="9" width="816" height="729" key="#Intentions" timestamp="1585494950670">
       <screen x="0" y="0" width="1366" height="738" />
@@ -131,10 +125,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="442" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1589332022486" />
-    <state x="317" y="0" key="CommitChangelistDialog2" timestamp="1589675917087">
+    <state x="231" y="0" key="CommitChangelistDialog2" timestamp="1589677626724">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="317" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589675917087" />
+    <state x="231" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589677626724" />
     <state x="473" y="248" key="FileChooserDialogImpl" timestamp="1585497599296">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
