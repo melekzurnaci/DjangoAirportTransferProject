@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d5da554-1776-4f19-8f8c-4a3a5cd8c6c4" name="Default Changelist" comment="" />
+    <list default="true" id="7d5da554-1776-4f19-8f8c-4a3a5cd8c6c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Lenovo_Pc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/homebase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTSitesi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTSitesi/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTSitesi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTSitesi/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="HTSitesi" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -15,21 +39,34 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Zo2rX4OF63xWCD1heD8X1dgoV9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/product" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Django\HTSitesi\product" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Django\HTSitesi\home\templates" />
+      <recent name="C:\Django\HTSitesi\uploads\images" />
+      <recent name="C:\Django\HTSitesi\home\migrations" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -45,11 +82,59 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Django/HTSitesi/product" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="0" y="9" width="816" height="729" key="#Intentions" timestamp="1585494950670">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="0" y="9" width="816" height="729" key="#Intentions/0.0.1366.738@0.0.1366.738" timestamp="1585494950670" />
+    <state x="137" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586641795512">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1586641795512" />
+    <state x="442" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589332022486">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="442" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1589332022486" />
+    <state x="317" y="0" key="CommitChangelistDialog2" timestamp="1589675917087">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="317" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589675917087" />
     <state x="473" y="248" key="FileChooserDialogImpl" timestamp="1585497599296">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -58,9 +143,17 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="164" y="23" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585561794544" />
-    <state x="384" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1585655306873">
+    <state x="388" y="142" key="com.intellij.ide.util.TipDialog" timestamp="1589675701842">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="384" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1585655306873" />
+    <state x="388" y="142" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1589675701842" />
+    <state x="492" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586638017252">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="492" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1586638017252" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1589283388657">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1589283388657" />
   </component>
 </project>

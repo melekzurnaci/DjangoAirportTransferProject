@@ -1,14 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>İlk Django Sayfası </title>
-</head>
-<body>
-    <h1>Hoş Geldin Django</h1>
-    <h3>Karabük Üniversitesi Bilgisayar Mühendisliği</h3>
-<p>
-    {{ text |safe}}
-</p>
-</body>
-</html>
+{% extends "homebase.html" %}
+{% block title %}{{ setting.title }} {% endblock %}
+{% block keywords %}{{ setting.keywords }} {% endblock %}
+{% block description %}{{ setting.description }}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
+{% endblock %}
+
+{% block sidebar %}
+    {% include "sidebar.html" %}
+{% endblock %}
+
+{% block slider %}
+    {% include "slider.html" %}
+{% endblock %}
+
+{% block content %}
+    {% include "content.html" %}
+{% endblock %}
