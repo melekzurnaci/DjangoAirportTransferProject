@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d5da554-1776-4f19-8f8c-4a3a5cd8c6c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Lenovo_Pc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Lenovo_Pc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/iletisim.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/iletisim.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589732340833</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="havalinı Transfer sitesi iletişim kısmı düzenlendi form oluşturuldu">
+      <created>1589746925098</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589746925098</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,10 +159,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="442" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1589332022486" />
-    <state x="497" y="0" key="CommitChangelistDialog2" timestamp="1589732338226">
+    <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1589752158253">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="497" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589732338226" />
+    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589752158253" />
     <state x="473" y="248" key="FileChooserDialogImpl" timestamp="1585497599296">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -165,10 +171,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="164" y="23" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585561794544" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1589732357504">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1589746932908">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1589732357504" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1589746932908" />
     <state x="388" y="142" key="com.intellij.ide.util.TipDialog" timestamp="1589741934099">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
