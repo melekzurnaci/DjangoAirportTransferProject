@@ -21,11 +21,23 @@
           <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
             <li class="active"><a href="/">Anasayfa</a></li>
              <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="properties.html">ARAÇLAR <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="properties.html">Kategoriler<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="properties.html">ARAÇLAR</a></li>
-                <li><a href="properties-detail.html">ARAÇ DETAYLARI</a></li>
-              </ul>
+                 {% load mptt_tags %}
+                  <ul>
+                    {% recursetree category %}
+                        <li>
+                            <li><a  href="properties.html">{{node.title}}<span class="caret"></span></a></li>
+
+                            {% if not node.is_leaf_node %}
+                                <ul class="children">
+                                      <li><a href="properties.html">{{children }}</a></li>
+                                </ul>
+                            {% endif %}
+                        </li>
+                    {% endrecursetree %}
+                   </ul>
+                  </ul>
             </li>
             <li><a href="gallery.html">GALLERY</a></li>
             <li class="dropdown">

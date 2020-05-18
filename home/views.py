@@ -4,15 +4,18 @@ from django.shortcuts import render
 
 # Create your views here.
 from home.models import Setting, ContactFormu, ContactFormMessage
-from product.models import Product
+from product.models import Product, Category
 
 
 def index(request):
     setting = Setting.objects.get(pk=1)
-    sliderdata = Product.objects.all()[:4]
+    sliderdata = Product.objects.all()[:5]
+    category = Category.objects.all()
     context = {'setting': setting,
                'page': 'home',
-               'sliderdata': sliderdata}
+               'category': category,
+               'sliderdata': sliderdata
+               }
     return render(request, 'index.html', context)
 
 
@@ -43,6 +46,7 @@ def iletisim(request):
             data.save()
             messages.success(request, "Mesajınız başarı ile gönderilmiştir, Teşekkür Ederiz")
             return HttpResponseRedirect ('/iletisim')
+
     #forma ulaşmak için bu kodlar yazıldı
     setting = Setting.objects.get(pk=1)
     form = ContactFormu()
