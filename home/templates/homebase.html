@@ -5,27 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-     {% load static %}
+    {% load static %}
 
-    <title> {% block title %}  Havalimanı Transfer Sitesi {% endblock %} </title>
+    <title> {% block title %} Havalimanı Transfer Sitesi {% endblock %} </title>
     <meta name="keywords" content="{% block keywords %} Anasayfa anahtar kelimeler {% endblock %}">
     <meta name="description" content="{% block description %} Anasayfa kısa açıklama {% endblock %}">
 
 
-
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}"  type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
 
     <!-- Font awesome -->
     <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
-    <!-- slick slider -->
+
     <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}">
     <!-- price picker slider -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/nouislider.css' %}">
     <!-- Fancybox slider -->
-    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}" type="text/css" media="screen"/>
     <!-- Theme color -->
     <link id="switcher" href="{% static 'css/theme-color/default-theme.css' %}" rel="stylesheet">
 
@@ -40,22 +37,52 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-{% block head %} {% endblock %}
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+    <style>
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+    </style>
+
+
+
+    {% block head %} {% endblock %}
+
 
 </head>
 <body>
 
-    {% include 'header.html'  %}
-    {% block sidebar  %}  {% endblock %}
+{% include 'header.html' %}
+{% block sidebar %} {% endblock %}
 
-    {% block slider %} {% endblock %}
+{% block slider %} {% endblock %}
 
-    {% block content %} {% endblock %}
+{% block content %}{% endblock %}
 
-    {% include 'footer.html' %}
-    {% block footer %} {% endblock %}
+{% include 'footer.html' %}
+{% block footer %} {% endblock %}
+
+<script>
+    $(document).ready(function () {
+        $('.dropdown-submenu a.test').on("click", function (e) {
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+        });
+    });
+</script>
+
 </body>
 </html>

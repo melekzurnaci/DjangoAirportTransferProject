@@ -47,7 +47,8 @@ class CategoryAdmin2(DraggableMPTTAdmin):
                 cumulative=True)
 
         # Add non cumulative product count
-        qs = Category.objects.add_related_count(qs,
+        qs = Category.objects.add_related_count(
+                 qs,
                  Product,
                  'category',
                  'products_count',

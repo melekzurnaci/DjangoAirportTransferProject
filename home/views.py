@@ -11,23 +11,29 @@ def index(request):
     setting = Setting.objects.get(pk=1)
     sliderdata = Product.objects.all()[:5]
     category = Category.objects.all()
+
     context = {'setting': setting,
                'page': 'home',
                'category': category,
-               'sliderdata': sliderdata
-               }
+               'sliderdata': sliderdata}
     return render(request, 'index.html', context)
 
 
 def hakkimizda(request):
+    category = Category.objects.all()
     setting = Setting.objects.get(pk=1)
-    context = {'setting': setting, 'page': 'hakkimizda'}
+    context = {'setting': setting,
+               'category': category,
+               'page': 'hakkimizda'}
     return render(request, 'hakkimizda.html', context)
 
 
 def referanslar(request):
+    category = Category.objects.all()
     setting = Setting.objects.get(pk=1)
-    context = {'setting': setting, 'page': 'referanslarimiz'}
+    context = {'setting': setting,
+               'category': category,
+               'page': 'referanslarimiz'}
     return render(request, 'referanslarimiz.html', context)
 
 
@@ -49,8 +55,12 @@ def iletisim(request):
 
     #forma ulaşmak için bu kodlar yazıldı
     setting = Setting.objects.get(pk=1)
+    category = Category.objects.all()
     form = ContactFormu()
-    context = {'setting': setting, 'form': form}
+    context = { 'setting': setting,
+                'category': category,
+                'form': form
+               }
     return render(request, 'iletisim.html', context)
 
 

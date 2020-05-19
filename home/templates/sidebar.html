@@ -1,59 +1,71 @@
 {% load static %}
 <!-- Start menu section -->
-  <section id="aa-menu-area">
+<section id="aa-menu-area">
     <nav class="navbar navbar-default main-navbar" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- LOGO -->
-          <!-- Text based logo -->
-           <a class="navbar-brand aa-logo" href="index.html"> Havalimanı <span> Transfer</span></a>
-           <!-- Image based logo -->
-           <!-- <a class="navbar-brand aa-logo-img" href="index.html"><img src="img/logo.png" alt="logo"></a> -->
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
-            <li class="active"><a href="/">Anasayfa</a></li>
-             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="properties.html">Kategoriler<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                 {% load mptt_tags %}
-                  <ul>
-                    {% recursetree category %}
-                        <li>
-                            <li><a  href="properties.html">{{node.title}}<span class="caret"></span></a></li>
+        <div class="container">
+            <div class="navbar-header">
+                <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- LOGO -->
+                <!-- Text based logo -->
+                <a class="navbar-brand aa-logo" href="index.html"> Havalimanı <span> Transfer</span></a>
+                <!-- Image based logo -->
+                <!-- <a class="navbar-brand aa-logo-img" href="index.html"><img src="img/logo.png" alt="logo"></a> -->
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav  ml-auto ">
+                    <li class="active"><a href="/">Anasayfa</a></li>
+                    <li class="dropdown">
+                        <a class=" dropdown-toggle" data-toggle="dropdown" href="#">
+                            Kategoriler
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            {% load mptt_tags %}
+                            {% recursetree category %}
 
-                            {% if not node.is_leaf_node %}
-                                <ul class="children">
-                                      <li><a href="properties.html">{{children }}</a></li>
-                                </ul>
-                            {% endif %}
-                        </li>
-                    {% endrecursetree %}
-                   </ul>
-                  </ul>
-            </li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">BLOG <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="blog-archive.html">BLOG</a></li>
-                <li><a href="blog-single.html">BLOG DETAILS</a></li>
-              </ul>
-            </li>
-            <li><a href="/iletisim">İLETİŞİM</a></li>
-             <li><a href="/referanslar">REFERANSLAR</a></li>
-             <li><a href="/hakkimizda">HAKKIMIZDA</a></li>
-           <li><a href="404.html">404 PAGE</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+                                {% if node.is_leaf_node %}
+
+                                    <li><a tabindex="-1" href="/category/{{ node.slug }}">{{ node.title }}</a></li>
+
+                                {% endif %}
+
+                                {% if not node.is_leaf_node %}
+                                    <li class="dropdown-submenu dropdown">
+                                        <a  tabindex="-1" href="/category/{{ node.slug }}">{{ node.title }} <span
+                                                class="caret"></span></a>
+                                        <ul class="dropdown-menu ">
+                                            {{ children }}
+                                        </ul>
+                                    </li>
+                                {% endif %}
+                            {% endrecursetree %}
+                        </ul>
+                    </li>
+
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">BLOG <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="blog-archive.html">BLOG</a></li>
+                            <li><a href="blog-single.html">BLOG DETAILS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/iletisim">İLETİŞİM</a></li>
+                    <li><a href="/referanslar">REFERANSLAR</a></li>
+                    <li><a href="/hakkimizda">HAKKIMIZDA</a></li>
+                    <li><a href="404.html">404 PAGE</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
     </nav>
-  </section>
-  <!-- End menu section -->
+
+
+</section>
+<!-- End menu section -->
