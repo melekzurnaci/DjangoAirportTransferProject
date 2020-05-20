@@ -11,11 +11,19 @@ def index(request):
     setting = Setting.objects.get(pk=1)
     sliderdata = Product.objects.all()[:5]
     category = Category.objects.all()
+    lastcars = Product.objects.all().order_by('category_id')[:6]
+    randomcars = Product.objects.all().order_by('?')[:4]
+    lastcarsnews = Product.objects.all()[:4]
+
 
     context = {'setting': setting,
                'page': 'home',
                'category': category,
-               'sliderdata': sliderdata}
+               'sliderdata': sliderdata,
+               'lastcars': lastcars,
+               'lastcarsnews': lastcarsnews,
+               'randomcars': randomcars
+               }
     return render(request, 'index.html', context)
 
 
@@ -39,7 +47,7 @@ def referanslar(request):
 
 
 def iletisim(request):
-#formu kaydetmek için bu fonksiyon yazıldı
+    #formu kaydetmek için bu fonksiyon yazıldı
     if request.method == 'POST': #form post ediliyor
         form = ContactFormu(request.POST)
         if form.is_valid():
@@ -60,14 +68,14 @@ def iletisim(request):
     context = { 'setting': setting,
                 'category': category,
                 'form': form
-               }
+                }
     return render(request, 'iletisim.html', context)
 
 def category_products(request,id,slug):
 
     category = Category.objects.all()
     categorydata = Category.objects.get(pk=id)
-    cars= Product.objects.filter(category_id=id)
+    cars = Product.objects.filter(category_id=id)
     context = {'cars': cars,
                'category': category,
                'categorydata': categorydata
