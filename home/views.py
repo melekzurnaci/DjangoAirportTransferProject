@@ -63,6 +63,15 @@ def iletisim(request):
                }
     return render(request, 'iletisim.html', context)
 
+def category_products(request,id,slug):
 
+    category = Category.objects.all()
+    categorydata = Category.objects.get(pk=id)
+    cars= Product.objects.filter(category_id=id)
+    context = {'cars': cars,
+               'category': category,
+               'categorydata': categorydata
+               }
+    return render(request, 'araclar.html', context)
 
 
