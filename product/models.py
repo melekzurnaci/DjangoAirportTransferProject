@@ -1,6 +1,8 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 # Create your models here.
+from django.forms import ModelForm
 from django.utils.safestring import mark_safe
 from ckeditor_uploader.fields import RichTextUploadingField
 from mptt.fields import TreeForeignKey
@@ -33,7 +35,7 @@ class Category(MPTTModel):
         while k is not None:
             full_path.append(k.title)
             k = k.parent
-        return ' > '.join(full_path[:: -1])
+        return ' / '.join(full_path[:: -1])
 
     def image_tag(self):
         return mark_safe('<img src="{}" height="50"/>'.format(self.image.url))
@@ -45,6 +47,7 @@ class Product(models.Model):
         ('True', 'Evet'),
         ('False', 'Hayır'),
     )
+    #ürünler ile kategori arasındaki ilişkiyi sağladık !!
     category = models.ForeignKey(Category, on_delete=models.CASCADE)  # relation with Category table
     title = models.CharField(max_length=150)
     keywords = models.CharField(blank=True, max_length=255)
@@ -78,3 +81,26 @@ class Images(models.Model):
         return mark_safe('<img src="{}" height="50"/>'.format(self.image.url))
     image_tag.short_description = 'Image'
 
+class Comment(models.Model):
+    STATUS = (
+        ('New', 'Yeni'),
+        ('True', 'Evet'),
+        ('False', 'Hayır'),
+    )
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    subject = models.CharField(max_length=50)
+    comment = models.TextField(max_length=250)
+    # rate = models.IntegerField(blank=True)
+    status = models.CharField(max_length=10, choices=STATUS)
+    ip = models.CharField(blank=True, max_length=20)
+    create_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.subject
+
+class CommentForm(ModelForm):
+    class Meta:
+        model = Comment
+        fields = ['subject', 'comment']

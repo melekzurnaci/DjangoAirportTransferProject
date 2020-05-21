@@ -1,0 +1,218 @@
+{% extends "homebase.html" %}
+{% block title %}{{ cars.title }} {% endblock %}
+{% block keywords %}{{ cars.keywords }} {% endblock %}
+{% block description %}{{ cars.description }}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
+{% endblock %}
+
+{% block sidebar %}
+    {% include "sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+    <!-- Start Proerty header  -->
+    <section id="aa-property-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-property-header-inner"  >
+                        <h2>HAKKIMIZDA</h2>
+                        <ol class="breadcrumb">
+                            <li><a href="/home">ANASAYFA</a></li>
+                            <li><a href="#">ARAÇLAR </a></li>
+                            <li><a href="/category/{{ cars.category_id }}/{{ cars.category.slug }}">{{  cars.category }}</a></li>
+                            <li class="active">{{ cars.title }}</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Proerty header  -->
+    <section id="aa-properties">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="aa-properties-content">
+                        <!-- Start properties content body -->
+
+                        <div class="aa-properties-details">
+
+                                <div class="aa-properties-details-img">
+                                    <img src="{{ cars.image.url }}" alt="img">
+                                    {% for  rs in images%}
+                                    <img src="{{ rs.image.url }}" alt="img">
+                                    {% endfor %}
+                                </div>
+
+                            <div class="aa-properties-info">
+{#                                <h2>{{ cars.title }}</h2>#}
+{#                                <span class="aa-price">($){{cars.price}}</span>#}
+{#                                <p>{{ cars.description }}</p>#}
+                                <div>
+                                     <h3>{{ cars.title }} Detail</h3>
+                                    <p>{{ cars.detail |safe }}</p>
+                                </div>
+                            </div>
+                            <!-- Properties social share -->
+                            <div class="aa-properties-social">
+                                <ul>
+                                    <li>Share</li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+
+                         <!-- comment threats -->
+                    <div class="col-md-12">
+                      <div class="aa-comments-area">
+                        <h3>Comments</h3>
+                        <div class="comments">
+                          <ul class="commentlist">
+                            <li>
+                                {% for rs in comments %}
+
+                              <div class="media">
+                                <div class="media-left">
+                                    <img alt="img" src="img/testimonial-1.png" class="media-object news-img">
+                                </div>
+                                <div class="media-body">
+                                 <h4 class="author-name">{{ rs.user.first_name }}</h4>
+                                 <span class="comments-date"> {{ rs.create_at}}</span>
+                                 <h4>{{ rs.subject }}</h4>
+                                    <p>{{ rs.comment }}</p>
+                                 <a class="reply-btn" href="#">Reply</a>
+                                </div>
+                              </div>
+                               {% endfor %}
+                            </li>
+                          </ul>
+                          <!-- comments pagination -->
+                          <nav>
+                            <ul class="pagination comments-pagination">
+                              <li>
+                                <a aria-label="Previous" href="#">
+                                  <span aria-hidden="true">«</span>
+                                </a>
+                              </li>
+                              <li><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">5</a></li>
+                              <li>
+                                <a aria-label="Next" href="#">
+                                  <span aria-hidden="true">»</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+{#                        deneme  #}
+{#                          <div class="pd-widget" id="respond">#}
+{#                            <h4>YOur Rating</h4>#}
+{#                            <form action="#" class="review-form">#}
+{#                                <div class="group-input">#}
+{#                                    <input type="text" placeholder="Name">#}
+{#                                    <input type="text" placeholder="Email">#}
+{#                                    <input type="text" placeholder="Website">#}
+{#                                </div>#}
+{#                                <textarea placeholder="Messages"></textarea>#}
+{#                                <div class="rating">#}
+{#                                    <span>Your Rating:</span>#}
+{#                                    <i class="fa fa-star"></i>#}
+{#                                    <i class="fa fa-star"></i>#}
+{#                                    <i class="fa fa-star"></i>#}
+{#                                    <i class="fa fa-star"></i>#}
+{#                                    <i class="fa fa-star"></i>#}
+{#                                </div>#}
+{#                                <button type="submit" class="site-btn">send messages</button>#}
+{#                            </form>#}
+{#                        </div>#}
+{##}
+{# deneme bitiş                          #}
+                      </div>
+                         <div id="respond">
+                        <h3 class="reply-title">Leave a Comment</h3>
+                         {% if messages %}
+                         {%  for message in messages %}
+                            <div class="alert alert-{{ message.tags }}" role="alert">
+                                {{ message }}
+                            </div>
+                         {% endfor %}
+                         {% endif %}
+                         <form id="commentform" action="/product/addcomment/{{ cars.id }}" method="post">
+                         {% csrf_token %}
+
+                          <p class="comment-form-author">
+                            <label for="author">Name <span class="required">*</span></label>
+                            <input type="text"  id="id_author" required ="required" placeholder="name" size="30" value="" name="author">
+                          </p>
+{#                          <p class="comment-form-email">#}
+{#                            <label for="email">Email <span class="required">*</span></label>#}
+{#                            <input type="email" id="id_comment" required="required" aria-required="true" value="" name="email">#}
+{#                          </p>#}
+                          <p class="comment-form-url">
+                            <label for="url">Subject<span class="required">*</span></label>
+                            <input type="text"  id="id_subject" value="" name="subject" placeholder="Subject">
+                          </p>
+                          <p class="comment-form-comment">
+                            <label for="comment">Comment <span class="required">*</span></label>
+                            <textarea required="required"  id="id_comment" aria-required="true" rows="8" cols="45"  placeholder="Your review" name="comment"></textarea>
+                          </p>
+{#                          <p class="form-allowed-tags">#}
+{#                            You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code>#}
+{#                          </p>#}
+                            <div class="rating">
+                                    <span>Your Rating:</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                          <p class="form-submit">
+                             {% if user.id is not None %}
+                              <input type="submit" value="Post Comment" class="aa-browse-btn" name="submit">
+                            {% else %}
+                              Yorum Eklemek için  <a href="/login"> Login</a> Yapmalısınız.
+                              {% endif %}
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <!-- Start properties sidebar -->
+                <div class="col-md-4">
+                    <aside class="aa-properties-sidebar">
+                        <!-- Start Single properties sidebar -->
+                        <div class="aa-properties-single-sidebar">
+{#                            cars = product #}
+                            <h3>{{ cars.title }}</h3>
+                             <div class="aa-properties-info">
+                                <h2>{{ cars.title }}</h2>
+                                <span class="aa-price">($){{cars.price}}</span>
+{#                                <p>{{ cars.description }}</p>#}
+                            </div>
+{#
+                        </div>
+
+
+
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

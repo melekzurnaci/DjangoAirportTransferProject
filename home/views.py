@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from home.models import Setting, ContactFormu, ContactFormMessage
-from product.models import Product, Category
+from product.models import Product, Category, Images, Comment
 
 
 def index(request):
@@ -65,21 +65,33 @@ def iletisim(request):
     setting = Setting.objects.get(pk=1)
     category = Category.objects.all()
     form = ContactFormu()
-    context = { 'setting': setting,
-                'category': category,
-                'form': form
-                }
+    context = {'setting': setting,
+               'category': category,
+               'form': form
+               }
     return render(request, 'iletisim.html', context)
 
 def category_products(request,id,slug):
 
     category = Category.objects.all()
     categorydata = Category.objects.get(pk=id)
-    cars = Product.objects.filter(category_id=id)
+    cars = Product.objects.filter(category_id=id, status='True')
     context = {'cars': cars,
                'category': category,
                'categorydata': categorydata
                }
     return render(request, 'araclar.html', context)
 
+def cars_details(request, id, slug):
+    category = Category.objects.all()
+    cars = Product.objects.get(pk=id)
+    images = Images.objects.filter(product_id=id)
+    comments = Comment.objects.filter(product_id=id, status='True')
+    context = {'cars': cars,
+               'category': category,
+               'images': images,
+               'comments': comments
+               }
+
+    return render(request, 'arac_detail.html', context)
 
