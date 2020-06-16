@@ -19,22 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a01dc76c-67b2-45f7-aa27-2a7cfb8d6070" name="Default Changelist" comment="django projede  detay sayfasına yorum kısımı eklendi !">
-      <change afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/cars_search.html" afterDir="false" />
+    <list default="true" id="a01dc76c-67b2-45f7-aa27-2a7cfb8d6070" name="Default Changelist" comment="django projede  otomatik slug oluşturma tamamlandı">
+      <change afterPath="$PROJECT_DIR$/home/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTSitesi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTSitesi/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,6 +56,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -106,7 +108,7 @@
       <workItem from="1590074160341" duration="16728000" />
       <workItem from="1590167131050" duration="1236000" />
       <workItem from="1590524828429" duration="5856000" />
-      <workItem from="1592287642998" duration="1167000" />
+      <workItem from="1592287642998" duration="12127000" />
     </task>
     <task id="LOCAL-00001" summary="django havalimanı transfer sitesinde alt kategori menüde css değişikliği yapıldı.">
       <created>1589892859231</created>
@@ -143,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590099736570</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="django projede  otomatik slug oluşturma tamamlandı">
+      <created>1592289095529</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1592289095529</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,13 +176,34 @@
     <MESSAGE value="django havalimanı transfer sitesinde araçları kategorilerde gösterme" />
     <MESSAGE value="django havalimanı transfer sitesinde anasayfada araçların gösterilme işlemi yapıldı." />
     <MESSAGE value="django projede  detay sayfasına yorum ekleme" />
-    <option name="LAST_COMMIT_MESSAGE" value="django projede  detay sayfasına yorum ekleme" />
+    <MESSAGE value="django projede  otomatik slug oluşturma tamamlandı" />
+    <option name="LAST_COMMIT_MESSAGE" value="django projede  otomatik slug oluşturma tamamlandı" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1590099775197">
+    <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592292643755">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590099775197" />
+    <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1592292643755" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1592292592208">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1366.738@0.0.1366.738" timestamp="1592292592208" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1592292616277">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1592292616277" />
+    <state x="184" y="14" key="SettingsEditor" timestamp="1592292404944">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1592292404944" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1592289108584">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1592289108584" />
+    <state x="492" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592289063251">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="492" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1592289063251" />
     <state x="0" y="0" width="585" height="738" key="find.popup" timestamp="1590014726156">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

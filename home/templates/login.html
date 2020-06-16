@@ -1,0 +1,95 @@
+{% extends "homebase.html" %}
+{% block title %}Login{{ setting.company }} {% endblock %}
+{% block keywords %}{{ setting.keywords }} {% endblock %}
+{% block description %}{{ setting.description }}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
+{% endblock %}
+
+{% block sidebar %}
+    {% include "sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+
+    <!-- Start Proerty header  -->
+    <section id="aa-property-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-property-header-inner"  >
+                        <h2>İLETİŞİM</h2>
+                        <ol class="breadcrumb">
+                            <li><a href="#">ANASAYFA</a></li>
+                            <li class="active">İletişim</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Proerty header  -->
+
+
+    <section id="aa-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-contact-area">
+                        <div class="aa-contact-top">
+                            <div class="aa-contact-top-left">
+                                <div class="section-title">
+                                    <h3 class="title">LOGIN</h3>
+                                </div>
+                                {{ setting.contact | safe }}
+                            </div>
+                        </div>
+                        <div class="aa-contact-bottom">
+                            <div class="aa-title">
+                                <h2>LOGIN FORMU </h2>
+                            </div>
+                            <div class="aa-contact-form">
+                                {% if messages %}
+                                    {% for message in messages %}
+                                        <div class="alert alert-{{message.tags}}" role="alert">
+                                            {{ message }}
+                                        </div>
+                                    {% endfor %}
+                                {% endif %}
+                                <form class="contactform">
+
+
+                                    <form action="" method="post">
+                                        {% csrf_token %}
+                                        <div class="aa-single-field">
+
+                                            <label for="author">Name <span class="required">*</span></label>
+                                            <input type="text" name="username" value="" size="30" required="required">
+
+                                        </div>
+                                        <div class="aa-single-field">
+                                            <label for="password">Password <span class="required">*</span></label>
+                                            <input type="password" name="password">
+                                        </div>
+                                        <div class="aa-single-field">
+                                            <label>
+                                                <input type="checkbox"> Remember me
+                                            </label>
+                                        </div>
+                                        <input type="submit" value="LOGIN">
+                                    </form>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+{% endblock %}

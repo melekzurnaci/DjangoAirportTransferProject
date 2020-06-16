@@ -48,24 +48,41 @@
                         </ul>
                     </li>
 
-{#                    <li><a href="gallery.html">GALLERY</a></li>#}
-{#                    <li class="dropdown">#}
-{#                        <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">BLOG <span#}
-{#                                class="caret"></span></a>#}
-{#                        <ul class="dropdown-menu" role="menu">#}
-{#                            <li><a href="blog-archive.html">BLOG</a></li>#}
-{#                            <li><a href="blog-single.html">BLOG DETAILS</a></li>#}
-{#                        </ul>#}
-{#                    </li>#}
+
                     <li><a href="/iletisim">İLETİŞİM</a></li>
                     <li><a href="/referanslar">REFERANSLAR</a></li>
                     <li><a href="/hakkimizda">HAKKIMIZDA</a></li>
-{#                    <li><a href="404.html">404 PAGE</a></li>#}
+                    <li class="nav-item dropdown">
+                        {% if user.id is not None %}
+                            <a class="nav-link dropdown-toggle" href="#"
+                               data-toggle="dropdown">{{ user.first_name }}</a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="/user"><span class="icon-user"></span>Hesabım</a></li>
+                                <li><a href="/user/comments/"><span class="icon-pencil"></span>Yorumlar</a></li>
+                                <li><a href="/logout/"> Çıkış Yap</a>
+                                </li>
+
+
+                            </ul>
+
+                        {% else %}
+                            <a class="nav-link dropdown-toggle" href="#"
+                               data-toggle="dropdown">LOGIN</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/login/" class="text-uppercase">Login</a></li>
+                                <li><a href="/signup/" class="text-uppercase">SignUp</a></li>
+                            </ul>
+                        {% endif %}
+
+                    </li>
+
+                    {#                    <li><a href="404.html">404 PAGE</a></li>#}
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-{#
+    {#
 
 </section>
 <!-- End menu section -->
