@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
 # Create your views here.
+from home.forms import SearchForm
 from home.models import Setting, ContactFormu, ContactFormMessage
 from product.models import Product, Category, Images, Comment
 
@@ -95,3 +96,19 @@ def cars_details(request, id, slug):
 
     return render(request, 'arac_detail.html', context)
 
+
+def cars_search(request):
+    #formu kaydetmek için bu fonksiyon yazıldı
+    if request.method == 'POST': #form post ediliyor
+        form = SearchForm(request.POST)
+        if form.is_valid():
+            category = Category.objects.all()
+            query = form.cleaned_data['query'] # formdan  bilgiyi alır
+            cars = Product.objects.filter(title__icontains=query)
+
+            context = {'cars': cars,
+                       'category': category
+                       }
+            return render(request, 'cars_search.html', context)
+
+    return HttpResponseRedirect('/')

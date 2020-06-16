@@ -19,20 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a01dc76c-67b2-45f7-aa27-2a7cfb8d6070" name="Default Changelist" comment="django havalimanı transfer sitesinde anasayfada araçların gösterilme işlemi yapıldı.">
-      <change afterPath="$PROJECT_DIR$/home/templates/arac_detail.html" afterDir="false" />
+    <list default="true" id="a01dc76c-67b2-45f7-aa27-2a7cfb8d6070" name="Default Changelist" comment="django projede  detay sayfasına yorum kısımı eklendi !">
+      <change afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/cars_search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTSitesi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTSitesi/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/homebase.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/homebase.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +59,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Django\HTSitesi\home\templates" />
+      <recent name="C:\Django\HTSitesi\home" />
     </key>
   </component>
   <component name="RunManager">
@@ -105,7 +103,10 @@
       <workItem from="1589938081486" duration="291000" />
       <workItem from="1589986465474" duration="5710000" />
       <workItem from="1590000965556" duration="29450000" />
-      <workItem from="1590074160341" duration="14355000" />
+      <workItem from="1590074160341" duration="16728000" />
+      <workItem from="1590167131050" duration="1236000" />
+      <workItem from="1590524828429" duration="5856000" />
+      <workItem from="1592287642998" duration="1167000" />
     </task>
     <task id="LOCAL-00001" summary="django havalimanı transfer sitesinde alt kategori menüde css değişikliği yapıldı.">
       <created>1589892859231</created>
@@ -135,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590002807194</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="django projede  detay sayfasına yorum ekleme">
+      <created>1590099736570</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590099736570</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,13 +166,14 @@
     <MESSAGE value="django havalimanı transfer sitesinde ürünlerin kategorilerde gösterme" />
     <MESSAGE value="django havalimanı transfer sitesinde araçları kategorilerde gösterme" />
     <MESSAGE value="django havalimanı transfer sitesinde anasayfada araçların gösterilme işlemi yapıldı." />
-    <option name="LAST_COMMIT_MESSAGE" value="django havalimanı transfer sitesinde anasayfada araçların gösterilme işlemi yapıldı." />
+    <MESSAGE value="django projede  detay sayfasına yorum ekleme" />
+    <option name="LAST_COMMIT_MESSAGE" value="django projede  detay sayfasına yorum ekleme" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1590020860951">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1590099775197">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590020860951" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590099775197" />
     <state x="0" y="0" width="585" height="738" key="find.popup" timestamp="1590014726156">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
