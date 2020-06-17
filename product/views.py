@@ -16,7 +16,6 @@ def addcomment(request, id):
         form = CommentForm(request.POST)
         if form.is_valid():
             current_user = request.user
-
             data = Comment() #model ile bağlantı kuruyor
             data.user_id = current_user.id
             data.product_id = id

@@ -69,6 +69,7 @@
                             </div>
 
                          <!-- comment threats -->
+
                     <div class="col-md-12">
                       <div class="aa-comments-area">
                         <h3>Comments</h3>
@@ -113,29 +114,6 @@
                             </ul>
                           </nav>
                         </div>
-{#                        deneme  #}
-{#                          <div class="pd-widget" id="respond">#}
-{#                            <h4>YOur Rating</h4>#}
-{#                            <form action="#" class="review-form">#}
-{#                                <div class="group-input">#}
-{#                                    <input type="text" placeholder="Name">#}
-{#                                    <input type="text" placeholder="Email">#}
-{#                                    <input type="text" placeholder="Website">#}
-{#                                </div>#}
-{#                                <textarea placeholder="Messages"></textarea>#}
-{#                                <div class="rating">#}
-{#                                    <span>Your Rating:</span>#}
-{#                                    <i class="fa fa-star"></i>#}
-{#                                    <i class="fa fa-star"></i>#}
-{#                                    <i class="fa fa-star"></i>#}
-{#                                    <i class="fa fa-star"></i>#}
-{#                                    <i class="fa fa-star"></i>#}
-{#                                </div>#}
-{#                                <button type="submit" class="site-btn">send messages</button>#}
-{#                            </form>#}
-{#                        </div>#}
-{##}
-{# deneme bitiş                          #}
                       </div>
                          <div id="respond">
                         <h3 class="reply-title">Leave a Comment</h3>
@@ -153,10 +131,7 @@
                             <label for="author">Name <span class="required">*</span></label>
                             <input type="text"  id="id_author" required ="required" placeholder="name" size="30" value="" name="author">
                           </p>
-{#                          <p class="comment-form-email">#}
-{#                            <label for="email">Email <span class="required">*</span></label>#}
-{#                            <input type="email" id="id_comment" required="required" aria-required="true" value="" name="email">#}
-{#                          </p>#}
+
                           <p class="comment-form-url">
                             <label for="url">Subject<span class="required">*</span></label>
                             <input type="text"  id="id_subject" value="" name="subject" placeholder="Subject">
@@ -165,17 +140,8 @@
                             <label for="comment">Comment <span class="required">*</span></label>
                             <textarea required="required"  id="id_comment" aria-required="true" rows="8" cols="45"  placeholder="Your review" name="comment"></textarea>
                           </p>
-{#                          <p class="form-allowed-tags">#}
-{#                            You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code>#}
-{#                          </p>#}
-                            <div class="rating">
-                                    <span>Your Rating:</span>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
+
+
                           <p class="form-submit">
                              {% if user.id is not None %}
                               <input type="submit" value="Post Comment" class="aa-browse-btn" name="submit">
@@ -192,6 +158,7 @@
                 </div>
                 <div></div>
                 <!-- Start properties sidebar -->
+
                 <div class="col-md-4">
                     <aside class="aa-properties-sidebar">
                         <!-- Start Single properties sidebar -->
@@ -203,13 +170,70 @@
                                 <span class="aa-price">($){{cars.price}}</span>
 {#                                <p>{{ cars.description }}</p>#}
                             </div>
-{#
+
                         </div>
+                         <div class="aa-properties-single-sidebar">
+              <h3>Properties Search</h3>
+              <form action="">
+                <div class="aa-single-advance-search">
+                  <input type="text" placeholder="Type Your Location">
+                </div>
+                <div class="aa-single-advance-search">
+                  <select id="" name="">
+                   <option selected="" value="0">Category</option>
+                    <option value="1">Flat</option>
+                    <option value="2">Land</option>
+                    <option value="3">Plot</option>
+                    <option value="4">Commercial</option>
+                  </select>
+                </div>
+                <div class="aa-single-advance-search">
+                  <select id="" name="">
+                    <option selected="" value="0">Type</option>
+                    <option value="1">Flat</option>
+                    <option value="2">Land</option>
+                    <option value="3">Plot</option>
+                    <option value="4">Commercial</option>
+                  </select>
+                </div>
+                <div class="aa-single-advance-search">
+                  <select id="" name="">
+                    <option selected="" value="0">Type</option>
+                    <option value="1">Flat</option>
+                    <option value="2">Land</option>
+                    <option value="3">Plot</option>
+                    <option value="4">Commercial</option>
+                  </select>
+                </div>
+                <div class="aa-single-filter-search">
+                  <span>AREA (SQ)</span>
+                  <span>FROM</span>
+                  <span id="skip-value-lower" class="example-val">30.00</span>
+                  <span>TO</span>
+                  <span id="skip-value-upper" class="example-val">100.00</span>
+                  <div id="aa-sqrfeet-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+                  </div>
+                </div>
+                <div class="aa-single-filter-search">
+                  <span>PRICE ($)</span>
+                  <span>FROM</span>
+                  <span id="skip-value-lower2" class="example-val">30.00</span>
+                  <span>TO</span>
+                  <span id="skip-value-upper2" class="example-val">100.00</span>
+                  <div id="aa-price-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+                  </div>
+                </div>
+                <div class="aa-single-advance-search">
+                  <input type="submit" value="Search" class="aa-search-btn">
+                </div>
+              </form>
+            </div>
 
 
 
                     </aside>
                 </div>
+
             </div>
         </div>
     </section>

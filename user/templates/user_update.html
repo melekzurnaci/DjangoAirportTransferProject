@@ -1,0 +1,86 @@
+{% extends "homebase.html" %}
+{% block title %}{{ profile.user_name }} Profile {% endblock %}
+{% block keywords %}{{ setting.keywords }} {% endblock %}
+{% block description %}{{ setting.description }}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
+{% endblock %}
+
+{% block sidebar %}
+    {% include "sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+    <!-- Start Proerty header  -->
+    <section id="aa-property-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-property-header-inner"  >
+                        <h2>Kullanıcı Sayfası</h2>
+                        <ol class="breadcrumb">
+                            <li><a href="#">ANASAYFA</a></li>
+                            <li class="active">Kullanıcı Bilgileri</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Proerty header  -->
+
+
+    <section id="aa-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-contact-area">
+                        <div class="aa-contact-top">
+                            <div class="aa-contact-top-left">
+                                <div class="section-title">
+                                    <h3 class="title">Kullanıcı Bilgilerini Güncelleme</h3>
+                                </div>
+                                {% if messages %}
+                                    {% for message in messages %}
+                                        <div style="color:#d45f3a;font-size:medium;">
+                                            {{message | safe }}
+                                        </div>
+                                    {% endfor %}
+                                {% endif %}
+                                <div class="content-section">
+                                    <div class="media">
+                                        <img src="{{ user.userprofile.image.url }}" style="height: 150px ; border-radius: 20px">
+                                    </div>
+                                    <hr>
+
+                                    <form method="POST" enctype="multipart/form-data">
+                                        {% csrf_token %}
+                                        <fieldset class="form-group">
+                                            {{ user_form.as_p }}
+                                            {{ profile_form.as_p }}
+                                        </fieldset>
+                                        <div class="form-group">
+                                            <button class="btn btn-outline-info" type="submit">Update</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                                <div class="col-md-4">
+
+
+                                    {% include "user_panel.html" %}
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+{% endblock %}
