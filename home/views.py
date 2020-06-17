@@ -148,7 +148,9 @@ def signup_view(request):
             user = authenticate(username=username, password=password)
             login(request, user)
             return HttpResponseRedirect('/')
-
+        else:
+            messages.warning(request, "Kayıt Hatası !"+str(form.error_messages))
+            return HttpResponseRedirect('/signup')
     form = SignUpForm()
     category = Category.objects.all()
     context = {

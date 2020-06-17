@@ -76,6 +76,13 @@
                         {% endif %}
 
                     </li>
+                    {% if user.id is not None %}
+                        <li class="nav-item">
+                            <div class="nav-link">
+                                <img height="40" src="{{ user.userprofile.image.url }}">
+                            </div>
+                        </li>
+                    {% endif %}
 
                     {#                    <li><a href="404.html">404 PAGE</a></li>#}
                 </ul>

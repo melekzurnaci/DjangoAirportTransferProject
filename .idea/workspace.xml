@@ -19,13 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a01dc76c-67b2-45f7-aa27-2a7cfb8d6070" name="Default Changelist" comment="django projede  otomatik slug oluşturma tamamlandı">
-      <change afterPath="$PROJECT_DIR$/home/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/signup.html" afterDir="false" />
+    <list default="true" id="a01dc76c-67b2-45f7-aa27-2a7cfb8d6070" name="Default Changelist" comment="django projem user işlemleri">
+      <change afterPath="$PROJECT_DIR$/user/templates/user_panel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTSitesi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTSitesi/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTSitesi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTSitesi/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
     </list>
@@ -37,8 +40,22 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/melekzurnaci/DjangoHTransferProject.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1c6B8TWbbHJA6T8G6lRSP1rxnfM" />
   <component name="ProjectViewState">
@@ -46,10 +63,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/home/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DjangoS/myProject1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,6 +78,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Django\HTSitesi\user\templates" />
+      <recent name="C:\Django\HTSitesi\user" />
       <recent name="C:\Django\HTSitesi\home\templates" />
       <recent name="C:\Django\HTSitesi\home" />
     </key>
@@ -108,7 +128,9 @@
       <workItem from="1590074160341" duration="16728000" />
       <workItem from="1590167131050" duration="1236000" />
       <workItem from="1590524828429" duration="5856000" />
-      <workItem from="1592287642998" duration="12127000" />
+      <workItem from="1592287642998" duration="22812000" />
+      <workItem from="1592373659015" duration="3071000" />
+      <workItem from="1592377682933" duration="7441000" />
     </task>
     <task id="LOCAL-00001" summary="django havalimanı transfer sitesinde alt kategori menüde css değişikliği yapıldı.">
       <created>1589892859231</created>
@@ -152,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592289095529</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="django projem user işlemleri">
+      <created>1592300538906</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592300538906</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +206,8 @@
     <MESSAGE value="django havalimanı transfer sitesinde anasayfada araçların gösterilme işlemi yapıldı." />
     <MESSAGE value="django projede  detay sayfasına yorum ekleme" />
     <MESSAGE value="django projede  otomatik slug oluşturma tamamlandı" />
-    <option name="LAST_COMMIT_MESSAGE" value="django projede  otomatik slug oluşturma tamamlandı" />
+    <MESSAGE value="django projem user işlemleri" />
+    <option name="LAST_COMMIT_MESSAGE" value="django projem user işlemleri" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592292643755">
@@ -188,18 +218,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1366.738@0.0.1366.738" timestamp="1592292592208" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1592292616277">
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1592380792033">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1592292616277" />
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1592380792033" />
     <state x="184" y="14" key="SettingsEditor" timestamp="1592292404944">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1592292404944" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1592289108584">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1592384532282">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1592289108584" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1592384532282" />
     <state x="492" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592289063251">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
