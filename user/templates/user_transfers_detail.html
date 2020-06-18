@@ -1,5 +1,5 @@
 {% extends "homebase.html" %}
-{% block title %}{{ profile.user_name }} Profile {% endblock %}
+{% block title %}Transfer {% endblock %}
 {% block keywords %}{{ setting.keywords }} {% endblock %}
 {% block description %}{{ setting.description }}{% endblock %}
 
@@ -38,18 +38,12 @@
                     <div class="aa-contact-area">
                         <div class="aa-contact-top">
                             <div class="aa-contact-top-left">
-                                <div class="section-title">
-                                    <h3 class="title">Kullanıcı Bilgilerim</h3>
+                            <div class="section-title">
+                                    <h3 class="title">Transfer Bilgilerim</h3>
                                 </div>
                                 <table class="table table-responsive">
 
-                                    <tr>
-                                        <th class="text-left" >
-                                            <a href="/user/update" class="btn btn-danger"  >Update Profile</a>
-                                            <a href="/user/password" class="btn btn-danger">Change Password</a>
-                                        </th>
-                                        <td><img src="{{ profile.image.url }}" style="height: 200px" alt=""></td>
-                                    </tr>
+
                                     <tr>  <th>Ad Soyad</th>
                                         <td>{{ profile.user_name }}</td></tr>
                                     <tr>   <th>Email</th>
@@ -74,6 +68,37 @@
 
 
 
+                                </table>
+                                <div class="section-title">
+                                    <h3 class="title">Kullanıcı Transfer Listesi</h3>
+                                </div>
+                                <table class="table table-responsive">
+
+                                    <tr>
+                                        <th class="text-left">Image</th>
+                                        <th class="text-left">Transfer Car Name</th>
+                                        <th class="text-left">Price </th>
+                                        <th class="text-left">Person</th>
+                                        <th class="text-left">Amount</th>
+                                        <th class="text-left">Status</th>
+                                        <th class="text-left">Date</th>
+                                    </tr>
+                                    {% for rs in transferitemsitems %}
+                                        <tr>
+
+                                            <td class="text-left">
+                                                <a href="/product/{{ rs.product_id }}/{{ rs.product.slug }}">
+                                                    <img src="{{ rs.product.image.url }}" height="80px">
+                                                </a>
+                                            </td>
+                                            <td class="text-left">{{ rs.product.title }}</td>
+                                            <td class="text-left">{{ rs.price }}</td>
+                                            <td class="text-left">{{ rs.quantity }}</td>
+                                            <td class="text-left">{{ rs.amount }}</td>
+                                            <td class="text-left">{{ rs.status }}</td>
+                                            <td class="text-left">{{ rs.date }}</td>
+                                        </tr>
+                                    {% endfor %}
                                 </table>
                             </div>
                             <div class="col-md-4">

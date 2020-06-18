@@ -1,5 +1,5 @@
 {% extends "homebase.html" %}
-{% block title %}{{ profile.user_name }} Profile {% endblock %}
+{% block title %}Transfer {% endblock %}
 {% block keywords %}{{ setting.keywords }} {% endblock %}
 {% block description %}{{ setting.description }}{% endblock %}
 
@@ -39,41 +39,34 @@
                         <div class="aa-contact-top">
                             <div class="aa-contact-top-left">
                                 <div class="section-title">
-                                    <h3 class="title">Kullanıcı Bilgilerim</h3>
+                                    <h3 class="title">Kullanıcı Transfer Listesi</h3>
                                 </div>
                                 <table class="table table-responsive">
 
                                     <tr>
-                                        <th class="text-left" >
-                                            <a href="/user/update" class="btn btn-danger"  >Update Profile</a>
-                                            <a href="/user/password" class="btn btn-danger">Change Password</a>
-                                        </th>
-                                        <td><img src="{{ profile.image.url }}" style="height: 200px" alt=""></td>
+                                        <th class="text-left">Id</th>
+                                        <th class="text-left">First Name</th>
+                                        <th class="text-left">Last Name </th>
+                                        <th class="text-left">Price</th>
+                                        <th class="text-left">Status</th>
+                                        <th class="text-left">Date</th>
+                                        <th class="text-left">Take-off</th>
+                                        <th class="text-left">Arrive</th>
+                                        <th class="text-left">Detail</th>
                                     </tr>
-                                    <tr>  <th>Ad Soyad</th>
-                                        <td>{{ profile.user_name }}</td></tr>
-                                    <tr>   <th>Email</th>
-                                        <td>{{ profile.user.email}}</td>
-                                    </tr>
-                                    <tr>    <th>Telefon</th>
-                                        <td>{{ profile.phone}}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Adres</th>
-                                        <td>{{ profile.address }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Şehir</th>
-                                        <td>{{ profile.city }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Ülke</th>
-                                        <td>{{ profile.country }}</td>
-                                    </tr>
-
-
-
-
+                                    {% for rs in transfers %}
+                                        <tr>
+                                            <td class="text-left">{{ rs.id }}</td>
+                                            <td class="text-left">{{ rs.first_name }}</td>
+                                            <td class="text-left">{{ rs.last_name }}</td>
+                                            <td class="text-left">{{ rs.price }}</td>
+                                            <td class="text-left">{{ rs.status }}</td>
+                                            <td class="text-left">{{ rs.date }}</td>
+                                            <td class="text-left">{{ rs.take_off }}</td>
+                                            <td class="text-left">{{ rs.arrive }}</td>
+                                            <td class="text-left"><a class="btn aa-primary-btn" href="/user/transferdetail/{{ rs.id }}">Detay</a></td>
+                                        </tr>
+                                    {% endfor %}
                                 </table>
                             </div>
                             <div class="col-md-4">

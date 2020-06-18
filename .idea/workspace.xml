@@ -19,21 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a01dc76c-67b2-45f7-aa27-2a7cfb8d6070" name="Default Changelist" comment="django projem user işlemleri">
-      <change afterPath="$PROJECT_DIR$/transfer/templates/transfer_completed.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transfer/templates/transfer_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transfer/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/change_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/user_update.html" afterDir="false" />
+    <list default="true" id="a01dc76c-67b2-45f7-aa27-2a7cfb8d6070" name="Default Changelist" comment="django projem user password ve update işlemleri">
+      <change afterPath="$PROJECT_DIR$/user/templates/user_comments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_transfers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_transfers_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTSitesi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTSitesi/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTSitesi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTSitesi/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/arac_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/arac_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/iletisim.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/iletisim.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transfer/templates/transfer_completed.html" beforeDir="false" afterPath="$PROJECT_DIR$/transfer/templates/transfer_completed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transfer/templates/transfer_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/transfer/templates/transfer_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_panel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/templates/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
     </list>
@@ -138,7 +133,8 @@
       <workItem from="1592373659015" duration="3071000" />
       <workItem from="1592377682933" duration="9876000" />
       <workItem from="1592392320675" duration="9550000" />
-      <workItem from="1592415595172" duration="15799000" />
+      <workItem from="1592415595172" duration="15917000" />
+      <workItem from="1592461424656" duration="13713000" />
     </task>
     <task id="LOCAL-00001" summary="django havalimanı transfer sitesinde alt kategori menüde css değişikliği yapıldı.">
       <created>1589892859231</created>
@@ -196,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592385308302</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="django projem user password ve update işlemleri">
+      <created>1592437742517</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1592437742518</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +225,8 @@
     <MESSAGE value="django projede  detay sayfasına yorum ekleme" />
     <MESSAGE value="django projede  otomatik slug oluşturma tamamlandı" />
     <MESSAGE value="django projem user işlemleri" />
-    <option name="LAST_COMMIT_MESSAGE" value="django projem user işlemleri" />
+    <MESSAGE value="django projem user password ve update işlemleri" />
+    <option name="LAST_COMMIT_MESSAGE" value="django projem user password ve update işlemleri" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592292643755">
@@ -233,18 +237,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1366.738@0.0.1366.738" timestamp="1592292592208" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1592380792033">
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1592461492711">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1592380792033" />
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1592461492711" />
     <state x="184" y="14" key="SettingsEditor" timestamp="1592292404944">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1592292404944" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1592385323535">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1592437746354">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1592385323535" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1592437746354" />
     <state x="492" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592289063251">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
