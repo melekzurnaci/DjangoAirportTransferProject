@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="aa-property-header-inner"  >
+                    <div class="aa-property-header-inner">
                         <h2>Kullanıcı Sayfası</h2>
                         <ol class="breadcrumb">
                             <li><a href="#">ANASAYFA</a></li>
@@ -44,10 +44,10 @@
                                 <table class="table table-responsive">
 
                                     <tr>
-                                        <th class="text-left">Id</th>
+                                        <th class="text-left">Code</th>
                                         <th class="text-left">First Name</th>
                                         <th class="text-left">Last Name </th>
-                                        <th class="text-left">Price</th>
+                                        <th class="text-left">Total</th>
                                         <th class="text-left">Status</th>
                                         <th class="text-left">Date</th>
                                         <th class="text-left">Take-off</th>
@@ -56,14 +56,14 @@
                                     </tr>
                                     {% for rs in transfers %}
                                         <tr>
-                                            <td class="text-left">{{ rs.id }}</td>
+                                            <td class="text-left">{{ rs.code }}</td>
                                             <td class="text-left">{{ rs.first_name }}</td>
                                             <td class="text-left">{{ rs.last_name }}</td>
-                                            <td class="text-left">{{ rs.price }}</td>
+                                            <td class="text-left">{{ rs.transfer_car.total }}</td>
                                             <td class="text-left">{{ rs.status }}</td>
-                                            <td class="text-left">{{ rs.date }}</td>
-                                            <td class="text-left">{{ rs.take_off }}</td>
-                                            <td class="text-left">{{ rs.arrive }}</td>
+                                            <td class="text-left">{{ rs.transfer_car.transfer_date }}</td>
+                                            <td class="text-left">{{ rs.transfer_car.take_off }}</td>
+                                            <td class="text-left">{{ rs.transfer_car.arrive }}</td>
                                             <td class="text-left"><a class="btn aa-primary-btn" href="/user/transferdetail/{{ rs.id }}">Detay</a></td>
                                         </tr>
                                     {% endfor %}

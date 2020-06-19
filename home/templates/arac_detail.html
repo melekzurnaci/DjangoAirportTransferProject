@@ -41,19 +41,17 @@
 
                         <div class="aa-properties-details">
 
-                                <div class="aa-properties-details-img">
-                                    <img src="{{ cars.image.url }}" alt="img">
-                                    {% for  rs in images%}
+                            <div class="aa-properties-details-img">
+                                <img src="{{ cars.image.url }}" alt="img">
+                                {% for  rs in images%}
                                     <img src="{{ rs.image.url }}" alt="img">
-                                    {% endfor %}
-                                </div>
+                                {% endfor %}
+                            </div>
 
                             <div class="aa-properties-info">
-{#                                <h2>{{ cars.title }}</h2>#}
-{#                                <span class="aa-price">($){{cars.price}}</span>#}
-{#                                <p>{{ cars.description }}</p>#}
+
                                 <div>
-                                     <h3>{{ cars.title }} Detail</h3>
+                                    <h3>{{ cars.title }} Detail</h3>
                                     <p>{{ cars.detail |safe }}</p>
                                 </div>
                             </div>
@@ -68,90 +66,90 @@
                                 </ul>
                             </div>
 
-                         <!-- comment threats -->
+                            <!-- comment threats -->
 
-                    <div class="col-md-12">
-                      <div class="aa-comments-area">
-                        <h3>Comments</h3>
-                        <div class="comments">
-                          <ul class="commentlist">
-                            <li>
-                                {% for rs in comments %}
+                            <div class="col-md-12">
+                                <div class="aa-comments-area">
+                                    <h3>Comments</h3>
+                                    <div class="comments">
+                                        <ul class="commentlist">
+                                            <li>
+                                                {% for rs in comments %}
 
-                              <div class="media">
-                                <div class="media-left">
-                                    <img alt="img" src="img/testimonial-1.png" class="media-object news-img">
+                                                    <div class="media">
+                                                        <div class="media-left">
+                                                            <img alt="img" src="img/testimonial-1.png" class="media-object news-img">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h4 class="author-name">{{ rs.user.first_name }}</h4>
+                                                            <span class="comments-date"> {{ rs.create_at}}</span>
+                                                            <h4>{{ rs.subject }}</h4>
+                                                            <p>{{ rs.comment }}</p>
+                                                            <a class="reply-btn" href="#">Reply</a>
+                                                        </div>
+                                                    </div>
+                                                {% endfor %}
+                                            </li>
+                                        </ul>
+                                        <!-- comments pagination -->
+                                        <nav>
+                                            <ul class="pagination comments-pagination">
+                                                <li>
+                                                    <a aria-label="Previous" href="#">
+                                                        <span aria-hidden="true">«</span>
+                                                    </a>
+                                                </li>
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li>
+                                                    <a aria-label="Next" href="#">
+                                                        <span aria-hidden="true">»</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
                                 </div>
-                                <div class="media-body">
-                                 <h4 class="author-name">{{ rs.user.first_name }}</h4>
-                                 <span class="comments-date"> {{ rs.create_at}}</span>
-                                 <h4>{{ rs.subject }}</h4>
-                                    <p>{{ rs.comment }}</p>
-                                 <a class="reply-btn" href="#">Reply</a>
+                                <div id="respond">
+                                    <h3 class="reply-title">Leave a Comment</h3>
+                                    {% if messages %}
+                                        {%  for message in messages %}
+                                            <div class="alert alert-{{ message.tags }}" role="alert">
+                                                {{ message }}
+                                            </div>
+                                        {% endfor %}
+                                    {% endif %}
+                                    <form id="commentform" action="/product/addcomment/{{ cars.id }}" method="post">
+                                        {% csrf_token %}
+
+                                        <p class="comment-form-author">
+                                            <label for="author">Name <span class="required">*</span></label>
+                                            <input type="text"  id="id_author" required ="required" placeholder="name" size="30" value="" name="author">
+                                        </p>
+
+                                        <p class="comment-form-url">
+                                            <label for="url">Subject<span class="required">*</span></label>
+                                            <input type="text"  id="id_subject" value="" name="subject" placeholder="Subject">
+                                        </p>
+                                        <p class="comment-form-comment">
+                                            <label for="comment">Comment <span class="required">*</span></label>
+                                            <textarea required="required"  id="id_comment" aria-required="true" rows="8" cols="45"  placeholder="Your review" name="comment"></textarea>
+                                        </p>
+
+
+                                        <p class="form-submit">
+                                            {% if user.id is not None %}
+                                                <input type="submit" value="Post Comment" class="aa-browse-btn" name="submit">
+                                            {% else %}
+                                                Yorum Eklemek için  <a href="/login"> Login</a> Yapmalısınız.
+                                            {% endif %}
+                                        </p>
+                                    </form>
                                 </div>
-                              </div>
-                               {% endfor %}
-                            </li>
-                          </ul>
-                          <!-- comments pagination -->
-                          <nav>
-                            <ul class="pagination comments-pagination">
-                              <li>
-                                <a aria-label="Previous" href="#">
-                                  <span aria-hidden="true">«</span>
-                                </a>
-                              </li>
-                              <li><a href="#">1</a></li>
-                              <li><a href="#">2</a></li>
-                              <li><a href="#">3</a></li>
-                              <li><a href="#">4</a></li>
-                              <li><a href="#">5</a></li>
-                              <li>
-                                <a aria-label="Next" href="#">
-                                  <span aria-hidden="true">»</span>
-                                </a>
-                              </li>
-                            </ul>
-                          </nav>
-                        </div>
-                      </div>
-                         <div id="respond">
-                        <h3 class="reply-title">Leave a Comment</h3>
-                         {% if messages %}
-                         {%  for message in messages %}
-                            <div class="alert alert-{{ message.tags }}" role="alert">
-                                {{ message }}
                             </div>
-                         {% endfor %}
-                         {% endif %}
-                         <form id="commentform" action="/product/addcomment/{{ cars.id }}" method="post">
-                         {% csrf_token %}
-
-                          <p class="comment-form-author">
-                            <label for="author">Name <span class="required">*</span></label>
-                            <input type="text"  id="id_author" required ="required" placeholder="name" size="30" value="" name="author">
-                          </p>
-
-                          <p class="comment-form-url">
-                            <label for="url">Subject<span class="required">*</span></label>
-                            <input type="text"  id="id_subject" value="" name="subject" placeholder="Subject">
-                          </p>
-                          <p class="comment-form-comment">
-                            <label for="comment">Comment <span class="required">*</span></label>
-                            <textarea required="required"  id="id_comment" aria-required="true" rows="8" cols="45"  placeholder="Your review" name="comment"></textarea>
-                          </p>
-
-
-                          <p class="form-submit">
-                             {% if user.id is not None %}
-                              <input type="submit" value="Post Comment" class="aa-browse-btn" name="submit">
-                            {% else %}
-                              Yorum Eklemek için  <a href="/login"> Login</a> Yapmalısınız.
-                              {% endif %}
-                          </p>
-                        </form>
-                      </div>
-                    </div>
 
                         </div>
                     </div>
@@ -163,71 +161,52 @@
                     <aside class="aa-properties-sidebar">
                         <!-- Start Single properties sidebar -->
                         <div class="aa-properties-single-sidebar">
-{#                            cars = product #}
+
                             <h3>{{ cars.title }}</h3>
-                             <div class="aa-properties-info">
+                            <div class="aa-properties-info">
                                 <h2>{{ cars.title }}</h2>
                                 <span class="aa-price">($){{cars.price}}</span>
-{#                                <p>{{ cars.description }}</p>#}
+
                             </div>
 
                         </div>
-                         <div class="aa-properties-single-sidebar">
-              <h3>Properties Search</h3>
-              <form action="">
-                <div class="aa-single-advance-search">
-                  <input type="text" placeholder="Type Your Location">
-                </div>
-                <div class="aa-single-advance-search">
-                  <select id="" name="">
-                   <option selected="" value="0">Category</option>
-                    <option value="1">Flat</option>
-                    <option value="2">Land</option>
-                    <option value="3">Plot</option>
-                    <option value="4">Commercial</option>
-                  </select>
-                </div>
-                <div class="aa-single-advance-search">
-                  <select id="" name="">
-                    <option selected="" value="0">Type</option>
-                    <option value="1">Flat</option>
-                    <option value="2">Land</option>
-                    <option value="3">Plot</option>
-                    <option value="4">Commercial</option>
-                  </select>
-                </div>
-                <div class="aa-single-advance-search">
-                  <select id="" name="">
-                    <option selected="" value="0">Type</option>
-                    <option value="1">Flat</option>
-                    <option value="2">Land</option>
-                    <option value="3">Plot</option>
-                    <option value="4">Commercial</option>
-                  </select>
-                </div>
-                <div class="aa-single-filter-search">
-                  <span>AREA (SQ)</span>
-                  <span>FROM</span>
-                  <span id="skip-value-lower" class="example-val">30.00</span>
-                  <span>TO</span>
-                  <span id="skip-value-upper" class="example-val">100.00</span>
-                  <div id="aa-sqrfeet-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
-                  </div>
-                </div>
-                <div class="aa-single-filter-search">
-                  <span>PRICE ($)</span>
-                  <span>FROM</span>
-                  <span id="skip-value-lower2" class="example-val">30.00</span>
-                  <span>TO</span>
-                  <span id="skip-value-upper2" class="example-val">100.00</span>
-                  <div id="aa-price-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
-                  </div>
-                </div>
-                <div class="aa-single-advance-search">
-                  <input type="submit" value="Search" class="aa-search-btn">
-                </div>
-              </form>
-            </div>
+                        <div class="aa-properties-single-sidebar">
+                            <h3>Transfer İşlemleri</h3>
+                            <form action="/transfer/transferform/{{ cars.id }}" method="post">
+                                <h1></h1>
+                                {% csrf_token %}
+                                <div class="aa-single-advance-search">
+                                    <input type="date" name="transfer_date" placeholder="Transfer tarihi">
+                                </div>
+
+                                <div class="aa-single-advance-search">
+                                    <select  name="take_off">
+                                        <option selected="-" value="-"></option>
+                                        <option value="Havalimani">Havalimani</option>
+                                        <option value="Ankara">Ankara</option>
+                                        <option value="Istanbul">Istanbul</option>
+                                        <option value="Bursa">Bursa</option>
+                                    </select>
+                                </div>
+
+                                <div class="aa-single-advance-search">
+                                    <select  name="arrive">
+                                        <option selected="-" value="-">Type</option>
+                                        <option value="Havalimani">Havalimani</option>
+                                        <option value="Ankara">Ankara</option>
+                                        <option value="Istanbul">Istanbul</option>
+                                        <option value="Bursa">Bursa</option>
+                                    </select>
+                                </div>
+                                <div class="aa-single-advance-search">
+                                    <input type="number" name="seat" placeholder="koltuk">
+                                </div>
+
+                                <div class="aa-single-advance-search">
+                                    <input type="submit" value="Transfer" class="aa-search-btn">
+                                </div>
+                            </form>
+                        </div>
 
 
 

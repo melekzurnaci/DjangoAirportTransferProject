@@ -19,6 +19,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 from home import views
+from transfer import views as transferviews
+
 
 urlpatterns = [
     path('', include('home.urls')),
@@ -38,6 +40,7 @@ urlpatterns = [
     path('logout/', views.logout_view, name='logout_view'),
     path('login/', views.login_view, name='login_view'),
     path('signup/', views.signup_view, name='signup_view'),
+    path('sss/', views.faq, name='faq'),
 
 ]
 if settings.DEBUG:

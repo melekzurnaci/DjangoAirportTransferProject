@@ -51,6 +51,7 @@
 
                     <li><a href="/iletisim">İLETİŞİM</a></li>
                     <li><a href="/referanslar">REFERANSLAR</a></li>
+                    <li><a href="/sss">SSS</a></li>
                     <li><a href="/hakkimizda">HAKKIMIZDA</a></li>
                     <li class="nav-item dropdown">
                         {% if user.id is not None %}
@@ -68,6 +69,7 @@
                             </ul>
 
                         {% else %}
+{#                             <h1>{{ user.id }}</h1>#}
                             <a class="nav-link dropdown-toggle" href="#"
                                data-toggle="dropdown">LOGIN</a>
                             <ul class="dropdown-menu">

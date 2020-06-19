@@ -19,17 +19,30 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a01dc76c-67b2-45f7-aa27-2a7cfb8d6070" name="Default Changelist" comment="django projem user password ve update işlemleri">
-      <change afterPath="$PROJECT_DIR$/user/templates/user_comments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/user_transfers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/templates/user_transfers_detail.html" afterDir="false" />
+    <list default="true" id="a01dc76c-67b2-45f7-aa27-2a7cfb8d6070" name="Default Changelist" comment="django projem user delete işlemleri">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/faq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transfer/migrations/0005_auto_20200619_2203.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTSitesi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTSitesi/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/arac_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/arac_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/araclar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/araclar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/homebase.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/homebase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transfer/templates/transfer_completed.html" beforeDir="false" afterPath="$PROJECT_DIR$/transfer/templates/transfer_completed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transfer/templates/transfer_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/transfer/templates/transfer_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/templates/user_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/templates/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transfer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/transfer/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user_transfers.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_transfers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user_transfers_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_transfers_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,16 +71,22 @@
     </option>
   </component>
   <component name="ProjectId" id="1c6B8TWbbHJA6T8G6lRSP1rxnfM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ekstra/my_project/my_project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,11 +97,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Django\HTSitesi\home\templates" />
       <recent name="C:\Django\HTSitesi\user\templates" />
       <recent name="C:\Django\HTSitesi\user" />
       <recent name="C:\Django\HTSitesi\transfer\templates" />
       <recent name="C:\Django\HTSitesi\transfer" />
-      <recent name="C:\Django\HTSitesi\home\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -134,7 +153,11 @@
       <workItem from="1592377682933" duration="9876000" />
       <workItem from="1592392320675" duration="9550000" />
       <workItem from="1592415595172" duration="15917000" />
-      <workItem from="1592461424656" duration="13713000" />
+      <workItem from="1592461424656" duration="27844000" />
+      <workItem from="1592493808616" duration="14919000" />
+      <workItem from="1592549823040" duration="21535000" />
+      <workItem from="1592575511631" duration="1519000" />
+      <workItem from="1592579702736" duration="20822000" />
     </task>
     <task id="LOCAL-00001" summary="django havalimanı transfer sitesinde alt kategori menüde css değişikliği yapıldı.">
       <created>1589892859231</created>
@@ -199,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592437742518</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="django projem user delete işlemleri">
+      <created>1592476218628</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1592476218628</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +248,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="django havalimanı transfer sitesinde alt kategori menüde css değişikliği yapıldı." />
     <MESSAGE value="django havalimanı transfer sitesinde ürünlerin kategorilerde gösterme" />
     <MESSAGE value="django havalimanı transfer sitesinde araçları kategorilerde gösterme" />
@@ -226,29 +257,34 @@
     <MESSAGE value="django projede  otomatik slug oluşturma tamamlandı" />
     <MESSAGE value="django projem user işlemleri" />
     <MESSAGE value="django projem user password ve update işlemleri" />
-    <option name="LAST_COMMIT_MESSAGE" value="django projem user password ve update işlemleri" />
+    <MESSAGE value="django projem user delete işlemleri" />
+    <option name="LAST_COMMIT_MESSAGE" value="django projem user delete işlemleri" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592292643755">
+    <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592600225562">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1592292643755" />
+    <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1592600225562" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1592292592208">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1366.738@0.0.1366.738" timestamp="1592292592208" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1592461492711">
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1592590958117">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1592461492711" />
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1592590958117" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1592600207290">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1592600207290" />
     <state x="184" y="14" key="SettingsEditor" timestamp="1592292404944">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1592292404944" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1592437746354">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1592476226624">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1592437746354" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1592476226624" />
     <state x="492" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592289063251">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -257,5 +293,16 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="0" y="0" width="585" height="738" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1590014726156" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="django-line">
+          <url>file://$PROJECT_DIR$/home/templates/signup.html</url>
+          <line>72</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

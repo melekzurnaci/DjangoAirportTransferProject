@@ -53,8 +53,8 @@
                                         <td>{{ profile.phone}}</td>
                                     </tr>
                                     <tr>
-                                        <th>Adres</th>
-                                        <td>{{ profile.address }}</td>
+                                        <th>Rezarvasyon tarih</th>
+                                        <td>{{ transfer.transfer_car.transfer_date }}</td>
                                     </tr>
                                     <tr>
                                         <th>Şehir</th>
@@ -83,22 +83,22 @@
                                         <th class="text-left">Status</th>
                                         <th class="text-left">Date</th>
                                     </tr>
-                                    {% for rs in transferitemsitems %}
+
                                         <tr>
 
                                             <td class="text-left">
-                                                <a href="/product/{{ rs.product_id }}/{{ rs.product.slug }}">
-                                                    <img src="{{ rs.product.image.url }}" height="80px">
+                                                <a href="/product/{{ transfer.transfer_car.car.id }}/{{ transfer.transfer_car.car.slug }}">
+                                                    <img src="{{ transfer.transfer_car.car.image.url }}" height="80px">
                                                 </a>
                                             </td>
-                                            <td class="text-left">{{ rs.product.title }}</td>
+                                            <td class="text-left">{{ transfer.transfer_car.car.title }}</td>
                                             <td class="text-left">{{ rs.price }}</td>
                                             <td class="text-left">{{ rs.quantity }}</td>
                                             <td class="text-left">{{ rs.amount }}</td>
                                             <td class="text-left">{{ rs.status }}</td>
                                             <td class="text-left">{{ rs.date }}</td>
                                         </tr>
-                                    {% endfor %}
+
                                 </table>
                             </div>
                             <div class="col-md-4">

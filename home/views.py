@@ -5,7 +5,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from home.forms import SearchForm, SignUpForm
-from home.models import Setting, ContactFormu, ContactFormMessage
+from home.models import Setting, ContactFormu, ContactFormMessage, UserProfile, FAQ
 from product.models import Product, Category, Images, Comment
 
 
@@ -117,6 +117,7 @@ def cars_search(request):
 def logout_view(request):
     logout(request)
     return HttpResponseRedirect('/')
+
 def login_view(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -127,7 +128,7 @@ def login_view(request):
             messages.success(request, "Hoşgeldiniz")
             return HttpResponseRedirect('/')
         else:
-            messages.warning(request, "Login Hatası ! Kullanıcı adı ya da şifre yanlış")
+            messages.error(request, "Login Hatası ! Kullanıcı adı ya da şifre yanlış")
             return HttpResponseRedirect('/login')
 
     category = Category.objects.all()
@@ -135,8 +136,6 @@ def login_view(request):
         'category': category,
     }
     return render(request, 'login.html', context)
-
-
 
 def signup_view(request):
     if request.method == 'POST':
@@ -147,10 +146,16 @@ def signup_view(request):
             password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=password)
             login(request, user)
+            #create data in profile table for user
+            current_user = request.user
+            data = UserProfile()
+            data.user_id = current_user.id
+            data.image = "images/users/user.png"
+            data.save()
+            messages.success(request,
+                "Kaydınız başarılı bir şekilde tamamlandı")
             return HttpResponseRedirect('/')
-        else:
-            messages.warning(request, "Kayıt Hatası !"+str(form.error_messages))
-            return HttpResponseRedirect('/signup')
+
     form = SignUpForm()
     category = Category.objects.all()
     context = {
@@ -158,3 +163,12 @@ def signup_view(request):
         'form': form,
     }
     return render(request, 'signup.html', context)
+
+
+def faq(request):
+        category = Category.objects.all()
+        faq = FAQ.objects.all().order_by('ordernumber')
+        context = {'category': category,
+                   'faq': faq,
+                   }
+        return render(request, 'faq.html', context)

@@ -4,7 +4,7 @@
 {% block description %}{{ setting.description }}{% endblock %}
 
 {% block head %}
-    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}'/>
 {% endblock %}
 
 {% block sidebar %}
@@ -19,11 +19,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="aa-property-header-inner"  >
-                        <h2>İLETİŞİM</h2>
+                    <div class="aa-property-header-inner">
+                        <h2>LOGIN</h2>
                         <ol class="breadcrumb">
                             <li><a href="#">ANASAYFA</a></li>
-                            <li class="active">İletişim</li>
+                            <li class="active">Login formu</li>
                         </ol>
                     </div>
                 </div>
@@ -53,19 +53,19 @@
                             <div class="aa-contact-form">
                                 {% if messages %}
                                     {% for message in messages %}
-                                        <div class="alert alert-{{message.tags}}" role="alert">
+                                        <div class="alert alert-{{ message.tags }}" role="alert">
                                             {{ message }}
                                         </div>
                                     {% endfor %}
                                 {% endif %}
-                                <form class="contactform">
 
 
-                                    <form action="" method="post">
+
+                                    <form method="post" class="contactform">
                                         {% csrf_token %}
                                         <div class="aa-single-field">
 
-                                            <label for="author">Name <span class="required">*</span></label>
+                                            <label for="author">UserName <span class="required">*</span></label>
                                             <input type="text" name="username" value="" size="30" required="required">
 
                                         </div>
@@ -78,10 +78,10 @@
                                                 <input type="checkbox"> Remember me
                                             </label>
                                         </div>
-                                        <input type="submit" value="LOGIN">
+                                        <input type="submit" value="login">
                                     </form>
 
-                                </form>
+
                             </div>
                         </div>
                     </div>

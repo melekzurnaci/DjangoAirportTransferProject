@@ -1,0 +1,60 @@
+{% extends "homebase.html" %}
+{% block title %} Sıkça Sorulan Sorular{% endblock %}
+{% block keywords %} {% endblock %}
+{% block description %}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion();
+        } );
+    </script>
+{% endblock %}
+
+{% block sidebar %}
+    {% include "sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+    <!-- Start Proerty header  -->
+    <section id="aa-property-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-property-header-inner"  >
+
+                        <ol class="breadcrumb">
+                            <li><a href="#">ANASAYFA</a></li>
+                            <li class="active">Sıkça Sorulan Sorular</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Proerty header  -->
+    <section id="aa-error">
+        <div class="container">
+            <row>
+                <div class="col-md-12">
+
+                    <div id="accordion">
+
+                        {% for rs in faq %}
+                            <h3>
+                                {{ rs.question }}
+                            </h3>
+                            <div>
+                                <p>{{ rs.answer }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </row>
+        </div>
+    </section>
+
+
+{% endblock %}
