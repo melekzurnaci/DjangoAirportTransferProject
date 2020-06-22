@@ -36,13 +36,13 @@
                 <div class="col-md-12">
                     <div class="aa-contact-bottom">
                         <div class="aa-title">
-                            <h2>Transfer FORMU </h2>
+                            <h2>Transfer Onay FORMU </h2>
 
                         </div>
                         <div class="aa-contact-form">
 
 
-
+                            <h4>Toplam Tutar :{{ transfer.transfer_car.total }}</h4>
                             <form  method="post" class="col-md-12">
                                 {% csrf_token %}
                                 <div class="col-md-6">
@@ -52,6 +52,7 @@
                                             <input type="text" name="first_name" value="{{ user.first_name }}"
                                                    class="input-group" maxlength="20">
                                         </p>
+
                                         <p>
                                             <label for="id_last_name">Last Name :</label>
                                             <input type="text" name="last_name" value="{{ user.last_name }}"
@@ -84,43 +85,7 @@
                                             <input type="text" name="country" id="id_country"
                                                    value="{{ profile.country }}" class="input-group" maxlength="20">
                                         </p>
-                                        <!--
-                                        <p>
-                                            <label for="id_date">Date :</label>
-                                            <input type="text" name="date" id="datepicker" placeholder="Date & Time"
-                                                   class="dates form-control input-group">
-                                        </p>
-                                        <p>
-                                            <label for="id_time">Time :</label>
-                                            <input type="time" name="time" id="id_time" placeholder="Time"
-                                                   class=" form-control input-group">
-                                        </p>
 
-                                        <p>
-                                            <label for="id_take_off">Take-off :</label>
-                                            <select name="take_off" class="input-group" id="id_take_off">
-                                                <option value="{{ profile.take_off }}"
-                                                        selected>{{ profile.take_off }}</option>
-                                                <option value="Havalimani">Havalimani</option>
-                                                <option value="Havalimani-*">Havalimani-*</option>
-                                                <option value="Sehir-A">Sehir-A</option>
-                                                <option value="Sehir-B">Sehir-B</option>
-                                                <option value="Sehir-C">Sehir-C</option>
-                                            </select>
-                                        </p>
-                                        <p>
-                                            <label for="id_arrive">Arrive :</label>
-                                            <select name="arrive" class="input-group" id="id_arrive">
-                                                <option value="{{ profile.arrive }}"
-                                                        selected>{{ profile.arrive }}</option>
-                                                <option value="Havalimani">Havalimani</option>
-                                                <option value="Havalimani-*">Havalimani-*</option>
-                                                <option value="Sehir-A">Sehir-A</option>
-                                                <option value="Sehir-B">Sehir-B</option>
-                                                <option value="Sehir-C">Sehir-C</option>
-                                            </select>
-                                        </p>
-                                        -->
                                     </div>
 
                                     <button type="submit" class="primary-btn">Complete Transfer</button>
@@ -131,6 +96,7 @@
 
 
                             </form>
+
                         </div>
 
 

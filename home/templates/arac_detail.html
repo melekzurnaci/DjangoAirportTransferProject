@@ -161,8 +161,7 @@
                     <aside class="aa-properties-sidebar">
                         <!-- Start Single properties sidebar -->
                         <div class="aa-properties-single-sidebar">
-
-                            <h3>{{ cars.title }}</h3>
+{#                            <h3>{{ cars.title }}</h3>#}
                             <div class="aa-properties-info">
                                 <h2>{{ cars.title }}</h2>
                                 <span class="aa-price">($){{cars.price}}</span>
@@ -173,33 +172,43 @@
                         <div class="aa-properties-single-sidebar">
                             <h3>Transfer İşlemleri</h3>
                             <form action="/transfer/transferform/{{ cars.id }}" method="post">
-                                <h1></h1>
                                 {% csrf_token %}
                                 <div class="aa-single-advance-search">
                                     <input type="date" name="transfer_date" placeholder="Transfer tarihi">
                                 </div>
+                                  <div class="aa-single-advance-search">
+                                    <input type="time" name="transfer_time" placeholder="Transfer Saati">
+                                </div>
 
                                 <div class="aa-single-advance-search">
                                     <select  name="take_off">
-                                        <option selected="-" value="-"></option>
-                                        <option value="Havalimani">Havalimani</option>
-                                        <option value="Ankara">Ankara</option>
-                                        <option value="Istanbul">Istanbul</option>
-                                        <option value="Bursa">Bursa</option>
+                                        <option selected="-" value="-">Nereden?</option>
+                                        <option >Ank.Esenboğa Havalimani</option>
+                                         <option >İst. Atatürk Havalimani</option>
+                                         <option >Adana Havalimani</option>
+                                         <option >Van Ferit Melen Havalimani</option>
+                                        <option >Ankara Çankaya</option>
+                                        <option >Istanbul Aksaray</option>
+                                        <option >Adana Kozan</option>
+                                        <option >Van Edremit</option>
                                     </select>
                                 </div>
 
                                 <div class="aa-single-advance-search">
                                     <select  name="arrive">
-                                        <option selected="-" value="-">Type</option>
-                                        <option value="Havalimani">Havalimani</option>
-                                        <option value="Ankara">Ankara</option>
-                                        <option value="Istanbul">Istanbul</option>
-                                        <option value="Bursa">Bursa</option>
+                                        <option selected="-" value="-">Nereye</option>
+                                          <option >Ank.Esenboğa Havalimani</option>
+                                         <option >İst. Atatürk Havalimani</option>
+                                         <option >Adana Havalimani</option>
+                                         <option >Van Ferit Melen Havalimani</option>
+                                        <option >Ankara Çankaya</option>
+                                        <option >Istanbul Aksaray</option>
+                                        <option >Adana Kozan</option>
+                                        <option >Van Edremit</option>
                                     </select>
                                 </div>
                                 <div class="aa-single-advance-search">
-                                    <input type="number" name="seat" placeholder="koltuk">
+                                    <input type="number" name="seat" placeholder="Kişi">
                                 </div>
 
                                 <div class="aa-single-advance-search">

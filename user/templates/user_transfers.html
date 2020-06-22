@@ -39,32 +39,36 @@
                         <div class="aa-contact-top">
                             <div class="aa-contact-top-left">
                                 <div class="section-title">
-                                    <h3 class="title">Kullanıcı Transfer Listesi</h3>
+                                    <h3 class="title">Kullanıcı Transfer Bilgileri</h3>
                                 </div>
                                 <table class="table table-responsive">
 
                                     <tr>
-                                        <th class="text-left">Code</th>
-                                        <th class="text-left">First Name</th>
-                                        <th class="text-left">Last Name </th>
-                                        <th class="text-left">Total</th>
-                                        <th class="text-left">Status</th>
-                                        <th class="text-left">Date</th>
-                                        <th class="text-left">Take-off</th>
-                                        <th class="text-left">Arrive</th>
-                                        <th class="text-left">Detail</th>
+                                         <th class="text-left">Transfer Aracı</th>
+                                        <th class="text-left">Rezarvasyon Kodu</th>
+                                        <th class="text-left">Tutar</th>
+                                        <th class="text-left">Kişi</th>
+{#                                        <th class="text-left">Status</th>#}
+                                        <th class="text-left">Gün</th>
+                                          <th class="text-left">Zaman</th>
+                                        <th class="text-left">Başlangıç</th>
+                                        <th class="text-left">Varış</th>
                                     </tr>
                                     {% for rs in transfers %}
                                         <tr>
+                                            <td class="text-left">
+                                                <a href="/product/{{ rs.transfer_car.car.id}}/{{ rs.transfer_car.car.slug}}">
+                                                    <img src="{{ rs.transfer_car.car.image.url }}" height="80px">
+                                                </a>
+                                            </td>
                                             <td class="text-left">{{ rs.code }}</td>
-                                            <td class="text-left">{{ rs.first_name }}</td>
-                                            <td class="text-left">{{ rs.last_name }}</td>
                                             <td class="text-left">{{ rs.transfer_car.total }}</td>
-                                            <td class="text-left">{{ rs.status }}</td>
+                                            <td class="text-left">{{ rs.transfer_car.seat }}</td>
+{#                                            <td class="text-left">{{ rs.status }}</td>#}
                                             <td class="text-left">{{ rs.transfer_car.transfer_date }}</td>
+                                             <td class="text-left">{{ rs.transfer_car.transfer_time}}</td>
                                             <td class="text-left">{{ rs.transfer_car.take_off }}</td>
                                             <td class="text-left">{{ rs.transfer_car.arrive }}</td>
-                                            <td class="text-left"><a class="btn aa-primary-btn" href="/user/transferdetail/{{ rs.id }}">Detay</a></td>
                                         </tr>
                                     {% endfor %}
                                 </table>

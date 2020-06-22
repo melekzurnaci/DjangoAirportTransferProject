@@ -39,7 +39,7 @@
                         <div class="aa-contact-top">
                             <div class="aa-contact-top-left">
                             <div class="section-title">
-                                    <h3 class="title">Transfer Bilgilerim</h3>
+                                    <h3 class="title">Kullanıcı Transfer Bilgilerim</h3>
                                 </div>
                                 <table class="table table-responsive">
 
@@ -57,12 +57,12 @@
                                         <td>{{ transfer.transfer_car.transfer_date }}</td>
                                     </tr>
                                     <tr>
-                                        <th>Şehir</th>
-                                        <td>{{ profile.city }}</td>
+                                        <th>Rezervasyon yapılan Araç</th>
+                                        <td>{{ transfer.transfer_car }}</td>
                                     </tr>
                                     <tr>
-                                        <th>Ülke</th>
-                                        <td>{{ profile.country }}</td>
+                                        <th>Kişi Sayısı</th>
+                                        <td>{{ transfer.transfer_car.seat }}</td>
                                     </tr>
 
 
@@ -79,7 +79,6 @@
                                         <th class="text-left">Transfer Car Name</th>
                                         <th class="text-left">Price </th>
                                         <th class="text-left">Person</th>
-                                        <th class="text-left">Amount</th>
                                         <th class="text-left">Status</th>
                                         <th class="text-left">Date</th>
                                     </tr>
@@ -92,11 +91,10 @@
                                                 </a>
                                             </td>
                                             <td class="text-left">{{ transfer.transfer_car.car.title }}</td>
-                                            <td class="text-left">{{ rs.price }}</td>
-                                            <td class="text-left">{{ rs.quantity }}</td>
-                                            <td class="text-left">{{ rs.amount }}</td>
-                                            <td class="text-left">{{ rs.status }}</td>
-                                            <td class="text-left">{{ rs.date }}</td>
+                                            <td class="text-left">{{ transfer.transfer_car.total }}</td>
+                                            <td class="text-left">{{ transfer.transfer_car.seat}}</td>
+                                            <td class="text-left">{{ transfer.transfer_car.status }}</td>
+                                            <td class="text-left">{{ transfer.transfer_car.transfer_date }}</td>
                                         </tr>
 
                                 </table>
